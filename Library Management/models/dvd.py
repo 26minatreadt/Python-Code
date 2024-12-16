@@ -1,4 +1,4 @@
-from library_item import LibraryItem
+from .library_item import LibraryItem  # Corrected import
 
 class DVD(LibraryItem):
     def __init__(self, item_id, title, author, publication_year, duration, rating):
@@ -7,5 +7,4 @@ class DVD(LibraryItem):
         self.rating = rating
 
     def __str__(self):
-        base_str = super().__str__()
-        return f"{base_str}, Duration: {self.duration}, Rating: {self.rating}"
+        return f"{super().__str__()} | Duration: {self.duration} | Rating: {self.rating}"
