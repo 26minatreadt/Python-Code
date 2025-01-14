@@ -1,23 +1,14 @@
 def binary_search(arr, target):
-    # Initialize the low and high pointers to the start and end of the array
-    low, high = 0, len(arr) - 1
-    
-    # Continue searching while the low pointer is less than or equal to the high pointer
+    low, high = 0, len(arr) -1
     while low <= high:
-        # Calculate the middle index of the current search range
         mid = (low + high) // 2
-        
-        # Check if the middle element is the target
         if arr[mid] == target:
-            return mid  # Target found, return its index
-        
-        # If the middle element is less than the target, discard the left half
+            return mid
         elif arr[mid] < target:
-            low = mid + 1  # Move the low pointer to the right of mid
-        
-        # If the middle element is greater than the target, discard the right half
+            low = mid + 1
         else:
-            high = mid - 1  # Move the high pointer to the left of mid
+            high = mid - 1
+        return "Not Found"
     
-    # If the target is not found, return -1
-    return -1
+data = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+print(binary_search(data, 70))
