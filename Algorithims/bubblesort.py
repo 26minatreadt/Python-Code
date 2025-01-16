@@ -9,7 +9,6 @@ def bubble_sort(arr):
                 arr[j], arr[j+1] = arr[j+1], arr[j]
     return arr
 
-# Example usage
-arr = [64, 34, 25, 12, 22, 11, 90]
+arr = [64, 34, 25, 12, 22, 11, 90, 99, 78]
 sorted_arr = bubble_sort(arr)
 print("Sorted array is:", sorted_arr)
