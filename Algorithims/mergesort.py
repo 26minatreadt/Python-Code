@@ -31,6 +31,6 @@ def merge_sort(arr):
 
     return arr
     
-    data = [38, 27, 43, 3, 9, 82, 10, 89, 2, 5]
-    merge_sort(data)
-    pint(data)
+data = [38, 27, 43, 3, 9, 82, 10, 89, 2, 5]
+merge_sort(data)
+print(data)
