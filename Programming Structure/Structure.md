@@ -1,4 +1,4 @@
-
+G
 
 Student Instructions for Learning Programming Structure
 The following detailed step-by-step exercises will guide you through the fundamental principles of structured programming. Follow each instruction carefully, and try to solve the tasks without looking up code examples immediately. 
