@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+     <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div >
+        <h1>Image Gallery</h1>
+        <div >
+            <img src="./images/Mona_Lisa.jpg" alt="Image 1" onclick="openModal(this.src)">
+            <img  src="./images/Starry_Night.jpg" alt="Image 2" onclick="openModal(this.src)">
+            <img  src="./images/WhistlersMother.jpg" alt="Image 3" onclick="openModal(this.src)">
+            <img  src="./images/Girl_with_pearle_earrings.jpg" alt="Image 4" onclick="openModal(this.src)">
+            <img  src="./images/American_Gothic.jpg" alt="Image 5" onclick="openModal(this.src)">
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Musium. All rights reserved.</p>
+    </footer>
+
+    <script >
+        function openModal(src) {
+            document.getElementById("myModal").style.display = "block";
+            document.getElementById("img01").src = src;
+        }
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
+</body>
+</html>

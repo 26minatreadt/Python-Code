@@ -1,0 +1,48 @@
+body{
+    background-color: royalblue;
+
+    background-image: url("images/peak.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+    background: linear-gradient(skyblue, lightgreen)
+    background-repeat no-repeat;
+    background-attachment: fixed;
+}
+h1{
+    color: white;
+    font-family: "Press Start 2P", "consolas", sans-serif;
+
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: double;
+
+    background: linear-gradient(to right, skyblue, white)
+}
+p{
+    background-color: gray;
+    color: white;
+    font-family: "consolas", sans-serif;
+    border-style: outset;
+    border-width: 5px;
+    border-color: gold;
+    padding: 5px;
+}
+
+#box1{
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+    background: greenyellow;
+}
+
+#box2{
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+    background: dodgerblue;
+}
